@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Redirecting...</title></head>
+<body>
+<script>
+const path = location.pathname;
+const parts = path.split('/').filter(Boolean);
+const repo = parts.length > 1 ? '/' + parts.slice(0, -1).join('/') + '/' : '/';
+location.replace(location.origin + repo + '?c=' + parts.at(-1));
+</script>
+</body>
+</html>
