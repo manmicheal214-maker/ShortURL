@@ -1,6 +1,31 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>ShortURL - Free URL Shortener</title><meta name="description" content="Create fast secure short links"><meta property="og:title" content="ShortURL"><link rel="icon" href="assets/favicon.svg"><script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="style.css"></head>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ShortURL - Shorten Links in Seconds</title>
+<meta name="description" content="Create beautiful, secure, and shareable short links instantly.">
+<link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="style.css">
+</head>
 <body>
+<div class="bg-shapes"><span></span><span></span><span></span></div>
 <button id="themeToggle" class="theme" aria-label="Toggle dark mode">☾</button>
-<main class="container"><section class="card"><h1>ShortURL</h1><h2 class="hero-title">Shorten links in seconds. Save time every click.</h2><p>Create beautiful short links instantly.</p><label for="url">Website URL</label><div class="row"><input id="url" type="url" aria-label="Long URL" placeholder="https://example.com"><button id="shorten">Shorten</button></div><div id="loader" hidden>Creating link...</div><div id="result" hidden></div><div id="stats" aria-live="polite"></div></section></main><div id="toast" role="status"></div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><script src="config.js"></script><script src="app.js"></script></body></html>
+<main class="container">
+<section class="hero">
+<h1>Shorten Links in Seconds</h1>
+<p>Create beautiful, secure, and shareable short links instantly.</p>
+</section>
+<section class="card">
+<label for="url">Website URL</label>
+<div class="row"><input id="url" type="url" placeholder="https://example.com" aria-label="Long URL"><button id="shorten">Shorten</button></div>
+<div id="loader" hidden>Creating your link...</div><div id="result" hidden></div><div id="stats" aria-live="polite"></div>
+</section>
+<section class="features">
+<article>⚡<h3>Instant Shortening</h3><p>Generate links in milliseconds.</p></article>
+<article>🔒<h3>Secure Links</h3><p>Safe and reliable redirects.</p></article>
+<article>📊<h3>Track Analytics</h3><p>Monitor clicks and engagement.</p></article>
+</section>
+<section class="numbers"><div><b>1M+</b><span>Links Shortened</span></div><div><b>99.9%</b><span>Uptime</span></div><div><b>50K+</b><span>Active Users</span></div></section>
+</main>
+<div id="toast" role="status"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><script src="config.js"></script><script src="app.js"></script>
+</body></html>
