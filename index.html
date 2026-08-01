@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ShortURL - Free URL Shortener</title>
+<meta name="description" content="Create fast, secure short links with ShortURL.">
+<meta property="og:title" content="ShortURL">
+<meta property="og:description" content="Create and share short links instantly.">
+<link rel="icon" href="assets/favicon.svg">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<section class="card">
+<h1>ShortURL</h1>
+<p>Create a short link instantly.</p>
+<label for="url">URL</label>
+<div class="row">
+<input id="url" type="url" placeholder="https://example.com" aria-label="Long URL">
+<button id="shorten">Shorten</button>
+</div>
+<div id="result" hidden></div>
+<div id="stats"></div>
+</section>
+</main>
+<div id="toast" role="status"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
