@@ -3,42 +3,18 @@
 GitHub Pages URL Shortener
 Configuration File
 ==========================================================
-
-Replace the values below with YOUR Supabase project details.
-
-You can find them here:
-
-Supabase Dashboard
-→ Settings
-→ API
-
-Do NOT put your database password here.
-
-Only use:
-• Project URL
-• Publishable (anon) key
-
-==========================================================
 */
 
 const CONFIG = {
 
-    // ----------------------------------------------------
-    // Supabase
-    // ----------------------------------------------------
-
-    SUPABASE_URL: "https://YOUR_PROJECT.supabase.co",
+    SUPABASE_URL: "https://adjfafdnlovprvdcjlmv.supabase.co",
 
     SUPABASE_ANON_KEY:
-        "YOUR_SUPABASE_PUBLISHABLE_KEY",
-
-    // ----------------------------------------------------
-    // App
-    // ----------------------------------------------------
-
-    APP_NAME: "Shorten",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFkamZhZmRubG92cHJ2ZGNqbG12Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU1Njc4MDIsImV4cCI6MjEwMTE0MzgwMn0.a4pcdy6DIXqPYhMYQv21V9u7Ig90pYhc4JOFbXZtz6A",
 
     CODE_LENGTH: 6,
+
+    APP_NAME: "Shorten",
 
     MAX_GENERATION_ATTEMPTS: 10,
 
@@ -46,31 +22,8 @@ const CONFIG = {
 
     ENABLE_CLICK_COUNTER: true,
 
-    ENABLE_EXPIRY: false,
-
-    DEFAULT_EXPIRY_DAYS: 30,
-
-    // ----------------------------------------------------
-    // UI
-    // ----------------------------------------------------
-
-    COPY_SUCCESS_TEXT: "Copied!",
-
-    COPY_DEFAULT_TEXT: "Copy",
-
-    CREATE_BUTTON_TEXT: "Shorten URL",
-
-    LOADING_BUTTON_TEXT: "Creating...",
-
-    // ----------------------------------------------------
-    // Validation
-    // ----------------------------------------------------
-
-    MIN_URL_LENGTH: 10,
-
-    MAX_URL_LENGTH: 4096
+    ENABLE_EXPIRY: false
 
 };
 
-// Freeze configuration
 Object.freeze(CONFIG);
